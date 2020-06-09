@@ -1,0 +1,45 @@
+.line {
+    display: block;
+    height: 30px;
+    background-color: #aaaaaa;
+}
+
+.line-index {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    padding-right: 10px;
+    width: 30px;
+    text-align: center;
+    color: white;
+}
+
+.word {
+    display: inline-block;
+    margin: 0px;
+    padding: 3px;
+    font-size: 12pt;
+}
+
+.block {
+    background-color: #b678f3;
+    border: 1px solid #8f41dd;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    cursor: default;
+}
+
+.block:hover {
+    background-color: #d5acff;
+}
+
+.plane {
+    border: none;
+    background-color: transparent;
+}
+
+.plane:focus {
+    outline: none;
+}
