@@ -173,7 +173,7 @@ class AutosizeInput extends Component {
 		return (
 			<div className={this.props.className} style={wrapperStyle}>
 				{this.renderStyles()}
-				<input {...inputProps} ref={this.inputRef} />
+				<input {...inputProps} ref={this.props.inputRef} />
 				<div ref={this.sizerRef} style={sizerStyle}>{sizerValue}</div>
 				{this.props.placeholder
 					? <div ref={this.placeHolderSizerRef} style={sizerStyle}>{this.props.placeholder}</div>
