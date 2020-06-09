@@ -3,7 +3,7 @@
     height: 30px;
     background-color: #aaaaaa;
     white-space: nowrap;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .line-index {
@@ -19,7 +19,11 @@
 .word {
     display: inline-block;
     margin: 0px;
-    padding: 3px;
+    padding: 0px;
+    /* padding: 3px; */
+    margin-right: 3px;
+    height:30px;
+    vertical-align: middle;
     font-size: 12pt;
 }
 
@@ -27,21 +31,43 @@
     background-color: #b678f3;
     border: 1px solid #8f41dd;
     border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    height:22px;
     color: white;
     cursor: default;
+
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.dragging {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.6;
 }
 
 .block:hover {
     background-color: #d5acff;
 }
 
-.plane {
+.plain {
     border: none;
     background-color: transparent;
 }
 
-.plane:focus {
+.plain:focus {
     outline: none;
+}
+
+.remainder {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    vertical-align: middle;
+    cursor: text;
 }

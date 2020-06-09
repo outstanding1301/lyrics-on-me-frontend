@@ -1,5 +1,5 @@
 
-export enum WordType {plane='plane', block='block'}
+export enum WordType {plain='plain', block='block'}
 
 export interface IWord {
       type: WordType;
