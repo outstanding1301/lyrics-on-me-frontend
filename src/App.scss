@@ -1,0 +1,60 @@
+.frame { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    background-color: yellow;
+}
+
+.contents {
+    display: flex;
+    flex: 1;
+}
+
+.side_menu {
+    flex: 1;
+    background-color: green;
+
+    &.closed {
+        flex: 0.1;
+    }
+}
+
+.main {
+    display: flex;
+    flex: 5;
+    background-color: lightgreen;
+}
+    
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    background-color: white;
+}
+
+.title {
+    margin: 5px;
+    padding: 5px;
+    background-color: gold;
+    font-size: 2em;
+}
+
+.editor {
+    flex: 1;
+    margin: 5px;
+    background-color: rgb(196, 196, 196);
+    font-size: 1em;
+}
+
+.tools {
+    flex: 1;
+    &.closed {
+        flex: 0.1;
+    }
+}

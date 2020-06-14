@@ -2,17 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-
-import { Provider } from 'mobx-react';
-import EditorStore from './stores/EditorStore';
-import Editor from './components/Editor';
-
-const editorStore = new EditorStore();
+import App from './App';
 
 ReactDOM.render(
-  <Provider store={editorStore}>
-    <Editor />
-  </Provider>,
+    <App />,
   document.getElementById('root')
 );
 
